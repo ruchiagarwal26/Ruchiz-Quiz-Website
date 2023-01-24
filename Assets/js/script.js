@@ -22,6 +22,8 @@ var questionIndex = 0;
 var correctOnQuiz = [];
 var UserInitials;
 
+//defining the questions and answers
+
 var quizContent = [
 { id : 0,
   question: "Inside which HTML element do we put the JavaScript?",
@@ -40,19 +42,12 @@ var quizContent = [
 }
 ]
 
-//console.log("options", quizContent);
-
-//function to call each question
-
-//startButton.addEventListener("click",displayQuestion);
-//submitButton.addEventListener("click",displayQuestion);
+//function to call each question and respective answer options
 
 function displayQuestion(){
 
   var answer;
   var useId;
-
-  //for (let i=0; i<quizContent.length; i++){ 
 
   questionId = quizContent[questionIndex].question;
   answer = []; 
@@ -95,22 +90,20 @@ submitButton.addEventListener("click", function(event){
           
           var answerIn = quizContent[questionIndex].answers ;
 
-         // console.log("selectedOption ", answerIn[selectedOption], " displayQuestion ",  quizContent[questionIndex].correct );
           //validating it with the right answer
             if (answerIn[selectedOption] == quizContent[questionIndex].correct)
               {
-              //adding into the win 
+              //adding into the win and loose
                 winCounter++
                 startButton.disabled = false;
-                setWins()
-                //isWin = true; 
+                setWins() 
                 }
               else {console.log("loose");
                     loseCounter++
                     timerCount= timerCount-2
                     setLosses()};
               
-              
+              //increasing index of questions and if question is at last index not to go further
               if (questionIndex < quizContent.length-1){
                   questionIndex = questionIndex + 1;
                   displayQuestion();
@@ -121,7 +114,7 @@ submitButton.addEventListener("click", function(event){
                   startButton.disabled = false;
                   questionSpace.innerHTML = " ";
                   optionSpace.innerHTML=" ";
-                  //questionSpace.textContent = UserInitials + " thank you for playing, you scored " + winCounter + ".";
+                  questionSpace.textContent = "Thank you for playing, you scored " + winCounter + " out of total " + quizContent.length + " questions.";
                   end_Quiz();
                  };  
 
@@ -142,6 +135,7 @@ function startGame() {
   startButton.disabled = true;
   //inital_set.empty();
   startTimer()
+  resetGame ()
 }
 
 // The loseGame function is called when timer reaches 0
@@ -241,7 +235,6 @@ function end_Quiz(){
  var UserInitials = localStorage.getItem("inititialsInput");
  var correctOnQuizCount = localStorage.getItem("winCount");
  correctOnQuiz.push(correctOnQuizCount);
- //UserInitials = userInitial;
 };
 
 // Bonus: Add reset button
