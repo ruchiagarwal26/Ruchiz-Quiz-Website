@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Java Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class= "large-font">Java Starter Quiz</div>
+      <button class="start-button">Start</button>
+    </header>
+
+    <main>
+      <section>
+        <div class="card word-guess">
+          <div class="large-font questions">Java Script Quiz</div>
+            <div id = "question">Questions</div>
+             <div id = "answers">Multiple Choice Answers</div>
+             <button type="submit" class="submit">Submit</button>
+
+        </div>
+
+      </section>
+
+      <section>
+        <div class="card results">
+          <div class = "win-loss-container">
+          <div>
+          <h2>Correct: <span class="correct">0 </span> </h2>
+          <h2>Misses: <span class="misses">0</span></h2>
+        </div>
+          <button class="reset-button">Reset Score</button>
+      </div>
+          <div class= "card timer">
+            <div class = "timer-text">
+            <div class="large-font timer-count">20</div>
+            <h3>seconds remaining</h3>
+          </div>
+        
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
