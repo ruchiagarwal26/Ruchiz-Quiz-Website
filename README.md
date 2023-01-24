@@ -19,13 +19,13 @@ The webpage contains <Start> tab. When this button is clicked then:
     
               i) The timer keeps track that the user must answer all the questions with in 20 seconds     
               
-              ii) If the user doesn't finish quiz in 20 seconds, Quiz ends and scores are captured
+              ii) If the user doesn't finish quiz in 20 seconds, Quiz ends and scores are captured and propmt appears to save your initials
               
               iii) if the selected option is incorrect, 2 seconds are minused/skipped from the timer
               
-              iii) If the user finishes the quiz within 20 seconds, the timer stops and the scores are stored
+              iii) If the user finishes the quiz within 20 seconds, the timer stops and the scores are stored and propmt appears to save your initials
 
-    c)Upon clicking start button, the quiz starts and the first question along with multiple options is presented
+    c) Upon clicking start button, the quiz starts and the first question along with multiple options is presented
 
 Upon submitting the desired response
 
