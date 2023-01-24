@@ -2,7 +2,8 @@
 
 ## Solution : https://ruchiagarwal26.github.io/Ruchiz-Quiz-Website/index
 
-![image](https://user-images.githubusercontent.com/115508901/214323061-db4f0f11-93be-4680-a18f-61de9ad63a85.png)
+![image](https://user-images.githubusercontent.com/115508901/214330906-0698227a-f1fd-4e6b-845c-c803be321999.png)
+
 
 
 
